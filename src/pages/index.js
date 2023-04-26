@@ -23,8 +23,8 @@ const Home = () => {
   return (
     <div className='home'>
       <div className='col col1'>
-      <h1>Hot Shops</h1>
-      <p1>In here, you can see all the recommended shops available in the area.</p1>
+        <h1>Hot Shops</h1>
+        <p>In here, you can see all the recommended <br></br> shops available in the area.</p>
       <button type='button'>See more</button>
       </div> 
       <div className='col'>
