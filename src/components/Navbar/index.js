@@ -34,6 +34,9 @@ const Navbar = () => {
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
+          <NavLink to='/sign-up' activeStyle>
+            Sign Up
+          </NavLink>
           <NavBtnLink to='/sign-in'>Sign In</NavBtnLink>
         </NavBtn>
       </Nav>
