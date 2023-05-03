@@ -14,15 +14,15 @@ const Navbar = () => {
     <Nav>
         <NavLink to='/'>
           {/* <img src={require('../../images/logo.svg')} alt='logo' /> */}
-          <h1>iRecommend</h1>
+          <h1>Quick Fix</h1>
         </NavLink>
         <Bars />
         <NavMenu>
           <NavLink to='/services' activeStyle>
-            Services
+            Home 
           </NavLink>
           <NavLink to='/marketplace' activeStyle>
-            Marketplace
+            Services
           </NavLink>
           <NavLink to='/booking' activeStyle>
             Booking

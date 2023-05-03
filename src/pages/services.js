@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Services = () => {
+const Marketplace = () => {
   return (
     <div
       style={{
@@ -15,4 +15,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Marketplace;

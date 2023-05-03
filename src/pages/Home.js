@@ -1,8 +1,16 @@
 import React from 'react';
 
-const Home = () => {
+const Services = () => {
   return (
-    <div>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '80vh'
+      }}
+    >
+      <div>
       <h1>Welcome to My Website!</h1>
       <p>
         The concept of quick fix refers to a temporary or short-term 
@@ -19,7 +27,8 @@ const Home = () => {
       Do not wait for opportunities, create them." - Roy T. Bennett
       </p>
     </div>
+    </div>
   );
 };
 
-export default Home;
+export default Services;
