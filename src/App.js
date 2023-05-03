@@ -5,12 +5,11 @@ import './App.css';
 import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages';
-import Services from './pages/services';
-import Marketplace from './pages/marketplace';
+import Services from './pages/Home';
+import Marketplace from './pages/Services';
 import Booking from './pages/booking';
 import About from './pages/about';
-import SignUp from './pages/SignUp/signup';
-import SignIn from './pages/SignIn/signin';
+import Registration from './pages/SignIn/Registration';
 
 function App() {
   return (
@@ -22,8 +21,7 @@ function App() {
         <Route path='/marketplace' Component={Marketplace} />
         <Route path='/booking' Component={Booking} />
         <Route path='/about'  Component={About} />
-        <Route path='/sign-up' Component={SignUp} />
-        <Route path='/sign-in' Component={SignIn} />
+        <Route path='/sign-in' Component={Registration} />
       </Routes>
     </Router>
   );
