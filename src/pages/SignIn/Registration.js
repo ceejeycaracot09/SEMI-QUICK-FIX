@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/* import React, { useState } from 'react';
 
 const SignUpForm = () => {
   const [email, setEmail] = useState('');
@@ -61,7 +61,7 @@ const App = () => {
   );
 };
 
-export default App;
+export default App; */
  
 /* import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
@@ -86,3 +86,51 @@ function BasicExample() {
     }]}
   }
 } */
+import React, { useState } from 'react';
+import Form from 'react-bootstrap/Form';
+
+function SignUp() {
+  const fields = [
+    {label: 'Email', type: 'text', placeholder: 'Email'},
+    {label: 'Username', type: 'text', placeholder: 'Username'},
+    {label: 'Password', type: 'password', placeholder: 'Password'}
+  ];
+
+  const [emailAddress, setEmailAddress] = useState('');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  return (
+    <div className="signin-container">
+      <Form>
+        {fields.map((field, index) => {
+          return (
+            <Form.Group className="ab-3" controlId={`signUpForm${index}`} key={index}>
+              <Form.Label>{field.label}</Form.Label>
+              <Form.Control 
+                type={field.type} 
+                placeholder={field.placeholder}
+                onChange={(e) => {
+                  if (field.label === 'Email') {
+                    setEmailAddress(e.target.value);
+                  } else if (field.label === 'Username') {
+                    setUsername(e.target.value);
+                  } else if (field.label === 'Password') {
+                    setPassword(e.target.value);
+                  }
+                }}
+              />
+            </Form.Group>
+          );
+        })}
+        <button type="submit">Sign In</button>
+        <br />
+        <h2> Hi {emailAddress}</h2>
+        <h2> Your username is {username}</h2>
+        <h2> Your password is {password}</h2>
+      </Form>
+    </div>
+  );
+}
+
+export default SignUp;

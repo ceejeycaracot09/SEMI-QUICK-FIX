@@ -169,3 +169,39 @@
   button:hover {
     background-color: #0066b3;
   }
+
+/* Registration */
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h2 {
+  margin: 10px;
+}
+
+Form {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+  background-color: #F08080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
