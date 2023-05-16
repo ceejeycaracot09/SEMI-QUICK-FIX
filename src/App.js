@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages';
 import Services from './pages/Home';
-import Marketplace from './pages/Services';
+import Marketplace from './pages/services';
 import Booking from './pages/booking';
 import About from './pages/about';
 import Registration from './pages/SignIn/Registration';
