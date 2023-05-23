@@ -1,7 +1,19 @@
 import React from 'react';
+import {useEffect, useState} from 'react';
+import axios from 'axios';
 import './home.css';
 
 const home = () => {
+  const [data, setData] = useState([]);
+  
+  useEffect (()=>{
+    axios.get('https://api.publicapis.org/entries')
+    .then(response => {
+      setData(response.data.entries);
+          });
+        },[])
+        console.log(data);
+
   return (
     <div className="home-container">
       <div className="home-image">
